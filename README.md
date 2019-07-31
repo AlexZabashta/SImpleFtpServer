@@ -1,4 +1,6 @@
 # Simple Ftp Server
+[Инструкция на русском](https://github.com/AlexZabashta/SimpleFtpServer/blob/master/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F.md)
+
 I tried to find a simple FTP-server, but could not. Therefore, I wrote my own.
 
 This project is based on `Apache FtpServer` (https://mina.apache.org/ftpserver-project/)
@@ -7,12 +9,12 @@ This is single user FTP-server. Note that it does not use SSL.
 
 ## How to run it
 All you need is **ftpserver.jar** file from this project.
-Just run it by **java** (version 8 or higher).
+Just run it in command line by **java** (version 8 or higher).
 
-You can find the examples in **run.bat** or **run.sh**.
+You can find the examples in **run.bat** or **run.sh** scripts.
 Just edit this files as you like and use them.
 
-If you run it with "your mouse" (using double click), it will still launch, but you will not be able to specify the parameters   and you will have to close it using the task manager.
+If you run *.jar* file with "your mouse" (using double click), it will still launch, but you will not be able to specify the parameters and you will have to close it using the task manager. So use *run.* scripts.
 
 ## Parameters
 
