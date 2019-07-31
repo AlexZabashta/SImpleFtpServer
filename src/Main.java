@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.helpers.Util;
 import org.apache.ftpserver.FtpServer;
 import org.apache.ftpserver.FtpServerFactory;
 import org.apache.ftpserver.ftplet.Authority;
@@ -12,7 +13,6 @@ import org.apache.ftpserver.listener.ListenerFactory;
 import org.apache.ftpserver.usermanager.PropertiesUserManagerFactory;
 import org.apache.ftpserver.usermanager.impl.BaseUser;
 import org.apache.ftpserver.usermanager.impl.WritePermission;
-import org.slf4j.helpers.Util;
 
 public class Main {
     public static Listener listen(String address, int port) {
@@ -40,7 +40,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Util.report("disabled");
 
         String address = "localhost";
         int port = 21;
@@ -67,6 +66,7 @@ public class Main {
         System.out.println("user name = " + name);
         System.out.println("password = " + pass);
 
+        Util.report("Ignore the output from SLF4J!");
         runServer(address, port, name, pass, root, readonly);
     }
 
